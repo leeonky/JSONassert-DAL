@@ -23,7 +23,7 @@ import static java.util.stream.StreamSupport.stream;
 public class PatternComparator extends DefaultComparator {
     public static final String PREFIX = "**";
     private final String prefix;
-    private DAL dal = DAL.INSTANCE;
+    private DAL dal = DAL.getInstance();
 
     private PatternComparator(String prefix) {
         super(JSONCompareMode.STRICT);
