@@ -27,7 +27,7 @@ class PatternComparatorTest {
         void get_syntax_error() {
             RuntimeException runtimeException = assertThrows(RuntimeException.class, () -> assertExpect("** = '", "\"a\""));
 
-            assertThat(runtimeException.getMessage()).contains("SyntaxException: should end with `'`\n= '\n   ^");
+            assertThat(runtimeException.getMessage()).contains("SyntaxException: Should end with `'`\n= '\n   ^");
         }
 
         @Test
